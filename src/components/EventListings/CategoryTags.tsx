@@ -26,10 +26,10 @@ const CategoryTags: React.FC = () => {
             variant="outline"
             onClick={() => setSelectedCategory(category)}
             className={cn(
-                'rounded-full border-gray-300 transition-colors duration-200',
+                'rounded-full border transition-colors duration-200',
                 selectedCategory === category
                 ? 'bg-secondary text-secondary-foreground border-primary'
-                : 'bg-white hover:bg-gray-100 text-gray-700'
+                : 'bg-card hover:bg-muted text-foreground'
             )}
             >
             {category}
