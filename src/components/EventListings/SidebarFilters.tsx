@@ -22,7 +22,7 @@ const SidebarFilters: React.FC = () => {
 
   const FilterTrigger: React.FC<{ title: string }> = ({ title }) => (
     <div className="flex items-center justify-between w-full">
-      <span className="text-base font-semibold text-gray-800">{title}</span>
+      <span className="text-base font-semibold text-foreground">{title}</span>
       <Button
         variant="link"
         className="text-primary p-0 h-auto text-sm hover:no-underline font-normal"
@@ -53,7 +53,7 @@ const SidebarFilters: React.FC = () => {
                     onClick={() => setSelectedDate('Today')}
                     className={cn(
                       'font-normal h-9',
-                      selectedDate === 'Today' ? 'border-primary text-primary bg-secondary' : 'bg-white'
+                      selectedDate === 'Today' ? 'border-primary text-primary bg-secondary' : 'bg-card'
                     )}
                   >
                     Today
@@ -63,7 +63,7 @@ const SidebarFilters: React.FC = () => {
                     onClick={() => setSelectedDate('Tomorrow')}
                     className={cn(
                       'font-normal h-9',
-                      selectedDate === 'Tomorrow' ? 'border-primary text-primary bg-secondary' : 'bg-white'
+                      selectedDate === 'Tomorrow' ? 'border-primary text-primary bg-secondary' : 'bg-card'
                     )}
                   >
                     Tomorrow
@@ -74,7 +74,7 @@ const SidebarFilters: React.FC = () => {
                   onClick={() => setSelectedDate('This Weekend')}
                   className={cn(
                     'font-normal w-full h-9',
-                    selectedDate === 'This Weekend' ? 'border-primary text-primary bg-secondary' : 'bg-white'
+                    selectedDate === 'This Weekend' ? 'border-primary text-primary bg-secondary' : 'bg-card'
                   )}
                 >
                   This Weekend
