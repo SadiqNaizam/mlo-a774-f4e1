@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         <div className="flex items-center gap-4 lg:gap-8">
           <div className="flex items-center gap-2 text-primary font-bold text-2xl shrink-0">
              <Ticket className="w-9 h-9" />
-             <span className="hidden md:block">bookmyshow</span>
+             <span className="hidden md:block">bookmyevent</span>
           </div>
 
           <div className="relative hidden lg:block w-full max-w-md">
